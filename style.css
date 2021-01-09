@@ -76,6 +76,9 @@ h3 {
 
 .card {
     margin: 15px;
+    border-color: gray;
+    border-radius: 1px;
+    
 }
 
 
@@ -96,6 +99,7 @@ i:hover {
     background-color: rgba(38, 46, 48, 0.304);
     margin: 0 auto;
     text-align: center;
+    padding-top: 40px;
 }
 
 .contact-icons {
@@ -107,6 +111,20 @@ i:hover {
 }
 
 .img-port {
-    width: 100%;
+    max-width: 100%;
+    align-content: center;
     
 }
+
+.footer-icons {
+    color: darkslategray;
+    margin: 5px;
+    
+}
+
+.footer-icons:hover {
+    color: hsla(170, 84%, 41%, 0.795)
+
+}
+
+
