@@ -126,9 +126,27 @@ i:hover {
     color: hsla(170, 84%, 41%, 0.795)
 
 }
-.port {
-    text-align: center;
-    margin: 5px;
+img {
+    max-width: 600px
 }
 
+a {
+    color: hsla(170, 84%, 41%, 0.795);
 
+}
+
+a:hover {
+    color:darkslategray
+
+}
+
+.link-container {
+    border:1px; 
+    border-style:solid; 
+    border-color: lightslategray; 
+    padding: 12px;
+}
+
+.link-container:hover {
+    border-color: hsla(170, 84%, 41%, 0.795);
+}
