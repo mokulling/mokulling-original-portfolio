@@ -76,8 +76,7 @@ h3 {
 
 .card {
     margin: 15px;
-    border-color: gray;
-    border-radius: 1px;
+    text-align: center;
     
 }
 
@@ -110,9 +109,13 @@ i:hover {
     background-color: #11c0a3cb;
 }
 
+img {
+    text-align: center;
+}
+
 .img-port {
     max-width: 100%;
-    align-content: center;
+    text-align: center;
     
 }
 
@@ -145,6 +148,7 @@ a:hover {
     border-style:solid; 
     border-color: lightslategray; 
     padding: 12px;
+    text-align: center;
 }
 
 .link-container:hover {
