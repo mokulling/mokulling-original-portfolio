@@ -41,6 +41,10 @@ h1, h2, h3, p, .tech {
     margin: 40px auto;
     font-family: 'source code pro', sans-serif;
 }
+li {
+    font-family: 'source code pro', sans-serif;
+
+}
 
 h3 {
     color: gray
