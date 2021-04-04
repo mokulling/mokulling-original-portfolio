@@ -1,11 +1,10 @@
 import React from 'react'
 import '../index.css'
 
-
 const Intro = () => (
     <>
-    <div classNameName="intro">
-    <h1 id="type1"></h1>
+    <div className="intro">
+    <h1 id="type1">Hi, I'm Matt.</h1>
     <h2 id ="type2">I'm a <span classNameName="background">web developer.</span></h2>
     <h3 id="type3">I like concepting and creating cool things for the web.</h3>
     <h4><span className="background">about me</span></h4>
