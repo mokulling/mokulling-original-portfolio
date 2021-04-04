@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import '../index.css'
 const Footer = () => {
     return (
        <> 
@@ -9,9 +8,9 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/matt-kulling-67789562/" target="blank"><i className="footer-icons fab fa-linkedin fa-2x"></i></a>
   
   
+        </>
 
-
-    </>      
+      
   
     )    
 

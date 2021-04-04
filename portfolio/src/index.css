@@ -11,3 +11,164 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  border-radius: 3px;
+  padding: 1px;
+  background-color:  hsla(170, 84%, 41%, 0.795);
+  border-width: 5px;
+}
+
+.background {
+  font-family: 'Rubik', sans-serif;
+  background-color: hsla(170, 84%, 41%, 0.795);
+  padding: 1px;
+
+}
+.container {
+  max-width: 800px;
+}
+
+.nav-link {
+  font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+
+nav {
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+.intro {
+  text-align: left;
+  margin-top: 15px;
+  
+}
+
+h1, h2, h3, p, .tech {
+  margin: 40px auto;
+  font-family: 'source code pro', sans-serif;
+}
+li {
+  font-family: 'source code pro', sans-serif;
+
+}
+
+h3 {
+  color: gray
+}
+
+.aboutme {
+  margin-top: 40px;
+  text-align: left;
+}
+#aboutme {
+  display: inline;
+}
+
+.resume {
+  background-color: hsla(170, 84%, 41%);
+  border-radius: 4px;
+}
+
+#resume {
+  color: white;
+
+}
+
+.works {
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  padding: 5px;
+  background-color: hsla(170, 84%, 41%, 0.795);
+
+}
+
+.card {
+  margin: 15px;
+  text-align: center;
+  
+}
+
+
+.card:hover {
+  border-color: hsla(170, 84%, 41%, 0.795);
+  border: 2px;
+  box-shadow: 5px 10px 5px hsla(170, 84%, 41%, 0.795);
+  
+}
+
+i:hover {
+  box-shadow: 2px 2px 2px hsla(170, 84%, 41%, 0.795);
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(38, 46, 48, 0.304);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contact-icons {
+  color:hsla(170, 84%, 41%, 0.795)
+}
+
+#submit-form {
+  background-color: #11c0a3cb;
+}
+
+img {
+  text-align: center;
+}
+
+.img-port {
+  max-width: 100%;
+  text-align: center;
+  
+}
+
+.footer-icons {
+  color: darkslategray;
+  margin: 5px;
+  
+}
+
+.footer-icons:hover {
+  color: hsla(170, 84%, 41%, 0.795)
+
+}
+img {
+  max-width: 600px
+}
+
+a {
+  color: hsla(170, 84%, 41%, 0.795);
+
+}
+
+a:hover {
+  color:darkslategray
+
+}
+
+.link-container {
+  border:1px; 
+  border-style:solid; 
+  border-color: lightslategray; 
+  padding: 12px;
+  text-align: center;
+}
+
+.link-container:hover {
+  border-color: hsla(170, 84%, 41%, 0.795);
+}
