@@ -1,6 +1,9 @@
 import React from 'react'
-
-
+import Note from '../images/Notetaker.png'
+import Password from '../images/password.png'
+import Wiki from '../images/wikigames.png'
+import Read from '../images/readmegenerator.png'
+import Weather from '../images/weatherdashboard.png'
 
 const Card = () => (
   <section className="container">
@@ -11,7 +14,7 @@ const Card = () => (
 
     <article className="port row mb-sm-4">
     <h2 className="port">Wikigames</h2>
-    <a target="_blank" href="https://mokulling.github.io/wikigames"><img alt="wikigames" className="img-port card img-fluid float-lg-right mb-md-4" src="wikigames.png" /></a>
+    <a target="_blank" href="https://mokulling.github.io/wikigames"><img alt="wikigames" className="img-port card img-fluid float-lg-right mb-md-4" src={Wiki} /></a>
     <p className="port">A web app utilizing the YouTube and RAWG games API users can search to make decisions about buying new games.</p>
   </article>
     <div>
@@ -32,7 +35,7 @@ const Card = () => (
 </div>
     <article className="port row mb-sm-4">
       <h2 className="port" >Weather Dashboard</h2>
-      <a target="_blank" href="https://mokulling.github.io/weatherdashboard"><img alt="weather-dashboard" className="img-port card img-fluid float-lg-left mb-md-4" src="weatherdashboard.png" /> </a>
+      <a target="_blank" href="https://mokulling.github.io/weatherdashboard"><img alt="weather-dashboard" className="img-port card img-fluid float-lg-left mb-md-4" src={Weather} /> </a>
     <p className="port">A weather dashboard utilizing an API where users can search for weather forecasts anywhere around the world.</p>
     <h4>Technologies used:</h4>
   </article>
@@ -59,7 +62,7 @@ const Card = () => (
     <hr />
     <article className="port row mb-sm-4">
       <h2 className="port">Note Taker</h2>
-      <a href="https://still-retreat-16511.herokuapp.com/" target="_blank"> <img alt="password-generator" className="img-port card img-fluid float-lg-right mb-md-4" src="Notetaker.png" /></a>
+      <a href="https://still-retreat-16511.herokuapp.com/" target="_blank"> <img alt="password-generator" className="img-port card img-fluid float-lg-right mb-md-4" src={Note} /></a>
       <p className="port">This project utilizes Express and node.js and it allows users to save and create new notes in a front end environment.  </p>
     </article>
     <div>
@@ -86,7 +89,7 @@ const Card = () => (
 
       <article className="port row mb-sm-4">
         <h2 className="port">Readme Generator</h2>
-        <a href="https://mokulling.github.io/passwordgenerator/" target="_blank"> <img alt="password-generator" className="img-port card img-fluid float-lg-right mb-md-4" src="readmegenerator.png" /></a>
+        <a href="https://mokulling.github.io/passwordgenerator/" target="_blank"> <img alt="password-generator" className="img-port card img-fluid float-lg-right mb-md-4" src={Read} /></a>
         <p className="port">This project generates a markdown readme file with a table of contents, description, and contact information for the developer creating it. This project was created using node.js</p>
       </article>
       <div>
