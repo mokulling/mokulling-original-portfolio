@@ -14,7 +14,7 @@ const Intro = () => (
         
    
     <div className="row">
-      <div className="col-lg-4"><img className="profile-photo" src={Headshot}/>
+      <div className="col-lg-4"><img className="img-fluid" src={Headshot}/>
 </div>
 
         <div className="col-lg-8">
