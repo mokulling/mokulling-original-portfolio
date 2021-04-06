@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20f6e986.chunk.css",
+    "main.js": "/static/js/main.120e90b4.chunk.js",
+    "main.js.map": "/static/js/main.120e90b4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8170c3bc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8170c3bc.js.map",
+    "static/js/2.95d712b1.chunk.js": "/static/js/2.95d712b1.chunk.js",
+    "static/js/2.95d712b1.chunk.js.map": "/static/js/2.95d712b1.chunk.js.map",
+    "static/js/3.79f85c32.chunk.js": "/static/js/3.79f85c32.chunk.js",
+    "static/js/3.79f85c32.chunk.js.map": "/static/js/3.79f85c32.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.20f6e986.chunk.css.map": "/static/css/main.20f6e986.chunk.css.map",
+    "static/js/2.95d712b1.chunk.js.LICENSE.txt": "/static/js/2.95d712b1.chunk.js.LICENSE.txt",
+    "static/media/Notetaker.913ac3ff.png": "/static/media/Notetaker.913ac3ff.png",
+    "static/media/budget-tracker.74127e5c.png": "/static/media/budget-tracker.74127e5c.png",
+    "static/media/culture.c561a131.png": "/static/media/culture.c561a131.png",
+    "static/media/matt-headshot.449adcd7.jpg": "/static/media/matt-headshot.449adcd7.jpg",
+    "static/media/password.afca880b.png": "/static/media/password.afca880b.png",
+    "static/media/readmegenerator.cd5f96c6.png": "/static/media/readmegenerator.cd5f96c6.png",
+    "static/media/weatherdashboard.fed3f541.png": "/static/media/weatherdashboard.fed3f541.png",
+    "static/media/wikigames.1d7c02ca.png": "/static/media/wikigames.1d7c02ca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8170c3bc.js",
+    "static/js/2.95d712b1.chunk.js",
+    "static/css/main.20f6e986.chunk.css",
+    "static/js/main.120e90b4.chunk.js"
+  ]
+}
