@@ -5,6 +5,7 @@ import Wiki from '../images/wikigames.png'
 import Read from '../images/readmegenerator.png'
 import Weather from '../images/weatherdashboard.png'
 import Budget from '../images/budget-tracker.png'
+import Culture from '../images/culture.png'
 
 const Card = () => (
   <section className="container">
@@ -138,7 +139,7 @@ const Card = () => (
     </a>
     <article className="port row mb-sm-4">
         <h2 className="port">Culture Blog</h2>
-        <a href="https://github.com/matthayden09/project_2/" target="_blank"> <img alt="password-generator" className="img-port card img-fluid float-lg-right mb-md-4" src={Budget} /></a>
+        <a href="https://github.com/matthayden09/project_2/" target="_blank"> <img alt="password-generator" className="img-port card img-fluid float-lg-right mb-md-4" src={Culture} /></a>
         <p className="port">This is a group project that is a full stack blog with a chat feature</p>
       </article>
       <div>
