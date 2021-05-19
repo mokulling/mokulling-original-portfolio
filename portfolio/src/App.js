@@ -22,13 +22,17 @@ function App() {
         <Header />
         <div className="container">
         
-          <Route path='/home'>
+          <Route exact path='/'>
               <Intro />
               <Home>
 
 
                 <Layout />
               </Home>
+          </Route>
+          <Route exact path ='/home'>
+          <Intro />
+
           </Route>
 
           <Route path='/portfolio'>
