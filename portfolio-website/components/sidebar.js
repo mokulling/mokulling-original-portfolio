@@ -6,9 +6,14 @@ export default function Sidebar() {
     <nav className={styles.nav}>
 
 <>
-<div>Home</div>
-<div>About</div>
-<div>Contact</div>
+<div className={styles.nav_items}><div className={styles.nav_item}>Home</div>
+<div className={styles.nav_item}>About</div>
+<div className={styles.nav_item}>Contact</div>
+
+
+
+
+</div>
 
 
 
