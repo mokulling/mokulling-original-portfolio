@@ -12,6 +12,11 @@
   color: whitesmoke;
   }
 
+  .intro {
+    background-color: green;
+    width: 80%
+  }
+
   .nav_items{
     position: absolute;
     top: 50%;
