@@ -7,8 +7,8 @@ return (
 
 <>
 <div className={styles.intro}>
-<div>Hello, I'm Matt</div>
-
+<div className={styles.paragraph}>Hello, I'm Matt <br />Let's work together to make cool things for the web. Please see below for examples of my work and see how to get in contact with me
+</div>
 
 
 
