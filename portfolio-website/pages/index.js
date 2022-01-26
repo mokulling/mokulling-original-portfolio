@@ -2,6 +2,12 @@ import Head from 'next/head'
 import Sidebar from '../components/sidebar'
 import styles from '../styles/home.module.css'
 import Intro from '../components/intro'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+
+} from "react-router-dom";
 
 
 
