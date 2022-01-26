@@ -1,8 +1,7 @@
 import styles from './sidebar.module.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-
-export default function Intro() {
+function Intro() {
 
 return (
 
@@ -34,3 +33,4 @@ Hello, I'm Matt</ScrollAnimation></h1> <br /><h2 className={styles.paragraph}>Le
 
 
 }
+export default Intro
