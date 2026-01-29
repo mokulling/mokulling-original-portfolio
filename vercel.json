@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "GOOGLE_SHEETS_SPREADSHEET_ID": "@google_sheets_spreadsheet_id",
+    "GOOGLE_SHEETS_SHEET_NAME": "@google_sheets_sheet_name",
+    "GOOGLE_SHEETS_CREDENTIALS": "@google_sheets_credentials"
+  }
+}

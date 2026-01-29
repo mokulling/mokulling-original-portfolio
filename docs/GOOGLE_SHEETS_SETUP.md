@@ -6,11 +6,14 @@ This guide will help you set up the Google Sheets integration for the contact fo
 
 When someone submits the contact form, their information (name, email, subject, and message) will automatically be saved to a Google Sheet that you own. Each submission includes a timestamp.
 
+**Important:** This contact form uses API routes which require a server. For production deployment, you must use **Vercel** (or another platform that supports Next.js API routes). See `VERCEL_DEPLOYMENT.md` for deployment instructions.
+
 ## Prerequisites
 
 - A Google account
 - Access to Google Cloud Console
 - Your portfolio website deployed or running locally
+- For production: Vercel account (free) - see `VERCEL_DEPLOYMENT.md`
 
 ## Step 1: Create a Google Sheet
 
@@ -109,16 +112,24 @@ When someone submits the contact form, their information (name, email, subject, 
 
 4. Check your Google Sheet - you should see a new row with the submission data!
 
-## Deployment
+## Deployment to Production
 
-When deploying to a hosting platform (Vercel, Netlify, etc.):
+This contact form requires a server to run the API route. **You must deploy to Vercel** (or another platform that supports Next.js API routes like Netlify or Railway).
 
+**For Vercel deployment (recommended):**
+- See the complete guide in `VERCEL_DEPLOYMENT.md`
+- Vercel is free for personal projects and made by the Next.js team
+- Your environment variables are added through Vercel's UI
+
+**For other platforms:**
 1. Add the environment variables in your platform's settings:
    - `GOOGLE_SHEETS_SPREADSHEET_ID`
    - `GOOGLE_SHEETS_SHEET_NAME`
    - `GOOGLE_SHEETS_CREDENTIALS`
 
 2. Make sure **not** to commit your `.env.local` file to version control (it's already in `.gitignore`)
+
+**Note:** GitHub Pages is not supported because it only serves static files and cannot run API routes.
 
 ## Troubleshooting
 
