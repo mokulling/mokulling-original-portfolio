@@ -19,8 +19,18 @@ export async function POST(request: NextRequest) {
     const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
     const sheetName = process.env.GOOGLE_SHEETS_SHEET_NAME || "Sheet1";
 
+    // Debug logging
+    console.log("Environment check:");
+    console.log("- Has credentials:", !!credentials);
+    console.log("- Credentials length:", credentials?.length || 0);
+    console.log("- Has spreadsheetId:", !!spreadsheetId);
+    console.log("- SpreadsheetId:", spreadsheetId);
+    console.log("- Sheet name:", sheetName);
+
     if (!credentials || !spreadsheetId) {
       console.error("Missing Google Sheets configuration");
+      console.error("credentials exists:", !!credentials);
+      console.error("spreadsheetId exists:", !!spreadsheetId);
       return NextResponse.json(
         { error: "Server configuration error" },
         { status: 500 }
