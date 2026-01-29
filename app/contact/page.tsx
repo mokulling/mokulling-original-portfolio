@@ -5,6 +5,7 @@ import { Mail, Github, Linkedin, Twitter, Phone, MapPin } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Textarea } from "@/components/ui/Textarea";
@@ -53,6 +54,11 @@ const contactMethods = [
 ];
 
 export default function Contact() {
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
   const {
     register,
     handleSubmit,
@@ -63,15 +69,33 @@ export default function Contact() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate form submission
-    console.log("Form data:", data);
+    try {
+      setSubmitStatus({ type: null, message: "" });
 
-    // In production, you would send this to an API endpoint
-    // For now, we'll just simulate a delay
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    alert("Message sent successfully! (This is a demo - no email was actually sent)");
-    reset();
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      setSubmitStatus({
+        type: "success",
+        message: "Message sent successfully! I'll get back to you soon.",
+      });
+      reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSubmitStatus({
+        type: "error",
+        message: "Failed to send message. Please try again or contact me directly via email.",
+      });
+    }
   };
 
   return (
@@ -218,6 +242,20 @@ export default function Contact() {
               <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
+
+              {submitStatus.type && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={`rounded-lg border p-4 ${
+                    submitStatus.type === "success"
+                      ? "border-green-500 bg-green-50 text-green-800 dark:bg-green-950 dark:text-green-200"
+                      : "border-red-500 bg-red-50 text-red-800 dark:bg-red-950 dark:text-red-200"
+                  }`}
+                >
+                  {submitStatus.message}
+                </motion.div>
+              )}
             </form>
           </div>
         </motion.div>
