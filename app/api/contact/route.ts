@@ -15,9 +15,20 @@ export async function POST(request: NextRequest) {
     }
 
     // Get Google Sheets credentials from environment variables
-    const credentials = process.env.GOOGLE_SHEETS_CREDENTIALS;
+    let credentials = process.env.GOOGLE_SHEETS_CREDENTIALS;
     const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
     const sheetName = process.env.GOOGLE_SHEETS_SHEET_NAME || "Sheet1";
+
+    // Strip surrounding quotes if present (handles cases where env var is quoted)
+    if (credentials) {
+      credentials = credentials.trim();
+      if (
+        (credentials.startsWith('"') && credentials.endsWith('"')) ||
+        (credentials.startsWith("'") && credentials.endsWith("'"))
+      ) {
+        credentials = credentials.slice(1, -1);
+      }
+    }
 
     // Debug logging
     console.log("Environment check:");
@@ -38,8 +49,20 @@ export async function POST(request: NextRequest) {
     }
 
     // Parse the service account credentials
+    let parsedCredentials;
+    try {
+      parsedCredentials = JSON.parse(credentials);
+    } catch (parseError) {
+      console.error("Failed to parse GOOGLE_SHEETS_CREDENTIALS:", parseError);
+      console.error("Credentials value (first 200 chars):", credentials?.substring(0, 200));
+      return NextResponse.json(
+        { error: "Invalid credentials format" },
+        { status: 500 }
+      );
+    }
+
     const auth = new google.auth.GoogleAuth({
-      credentials: JSON.parse(credentials),
+      credentials: parsedCredentials,
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
